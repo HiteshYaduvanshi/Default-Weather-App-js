@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.weatherApp{
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weatherCard{
+    flex-basis: 30%;
+    width: 30%;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 50px;
+    margin: 20px 0;
+    height: auto;
+}
+
+.resultCard{
+    display: none;
+}
+
+.other{
+    width: 100%;
+    height: 100px;
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.weatherCard input{
+    border: none;
+    border-bottom: 1px solid Black;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.weatherCard button{
+    border: none;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    padding: 10px 30px;
+    border-radius:3px;
+}
+
+.weatherCard h1{
+    margin: 20px 0;
+}
+
+.weatherCard p.temperature{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.humi span,.wind span{
+    font-size: 20px;
+    color: #fff;
+}
+
+.humi p.humidity{
+    color:#fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.wind p.windSpeed{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.error{
+    margin-top: 50px;
+    background-color: red;
+    color: aliceblue;
+    display: none;
+}
+
+.weather-Icon{
+    max-width: 100px;
+}
+
+.humi img,.wind img{
+    width: 20px;
+}
+
+@media only screen and (max-width: 998px){
+    .weatherCard{
+        flex-basis: 50%;
+        width: 50%;
+    }   
+}
+
+@media only screen and (max-width: 595px){
+    .weatherCard{
+        flex-basis: 70%;
+        width: 70%;
+    }   
+}
+
+@media only screen and (max-width: 437px){
+    .weatherCard{
+        flex-basis: 90%;
+        width: 90%;
+    }   
+}
